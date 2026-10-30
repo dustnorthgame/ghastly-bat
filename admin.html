@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Control Room — Usher Decides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body class="admin">
+  <div id="modeBar" class="mode-bar"></div>
+  <div class="cr">
+    <aside class="cr-rail">
+      <div class="cr-brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 1 29 8.5v15L16 31 3 23.5v-15Z"/></svg><span><b>CONTROL</b> ROOM</span></div>
+      <nav class="cr-nav" aria-label="Control room">
+        <button data-tab="overview" class="on">Overview</button>
+        <button data-tab="seats">Constituencies</button>
+        <button data-tab="parties">Parties</button>
+        <button data-tab="exitpoll">Exit poll</button>
+        <button data-tab="news">Newsroom</button>
+        <button data-tab="broadcast">Broadcast</button>
+        <button data-tab="sim">Simulation</button>
+        <button data-tab="data">Elections &amp; data</button>
+      </nav>
+      <div class="cr-clock" id="crClock"></div>
+      <a class="cr-out" href="index.html" target="_blank" rel="noopener">Open public site</a>
+    </aside>
+    <main class="cr-main" id="crMain" tabindex="-1"></main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

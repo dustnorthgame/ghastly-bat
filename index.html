@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usher Decides — General Election</title>
+  <meta name="description" content="Live results, exit poll, constituency map and swingometer for the Usher General Election.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 1 29 8.5v15L16 31 3 23.5v-15Z' fill='%23f2b705'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body class="site">
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="banner" class="banner" hidden></div>
+  <header class="masthead">
+    <a class="brand" href="#/" aria-label="Usher Decides home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 1 29 8.5v15L16 31 3 23.5v-15Z"/><path class="inner" d="M16 8l7 4v8l-7 4-7-4v-8Z"/></svg>
+      <span class="brand-text"><b>USHER</b> DECIDES</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#/">Live</a>
+      <a href="#/results">Results</a>
+      <a href="#/constituencies">Constituencies</a>
+      <a href="#/map">Map</a>
+      <a href="#/swingometer">Swingometer</a>
+      <a href="#/exit-poll">Exit poll</a>
+      <a href="#/graphics">Graphics</a>
+    </nav>
+    <div class="status-pill" id="statusPill"></div>
+  </header>
+  <div id="simNotice" class="sim-notice" hidden>Simulation data on display — these are not real results.</div>
+  <main id="main" tabindex="-1"></main>
+  <footer class="foot">
+    <p>Usher Decides · Fictional election coverage platform · <span id="modeNote"></span></p>
+  </footer>
+  <div id="ticker" class="ticker-dock"></div>
+  <div id="tip" class="map-tip" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

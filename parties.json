@@ -1,0 +1,31 @@
+[
+  {
+    "id": "UIP",
+    "name": "Usher Independence Party",
+    "short": "UIP",
+    "colour": "#6B2FA0",
+    "text": "#FFFFFF"
+  },
+  {
+    "id": "BWP",
+    "name": "British Workers Party",
+    "short": "BWP",
+    "colour": "#D2202F",
+    "text": "#FFFFFF"
+  },
+  {
+    "id": "CON",
+    "name": "Conservative Party",
+    "short": "Con",
+    "colour": "#1F5FBF",
+    "text": "#FFFFFF"
+  },
+  {
+    "id": "IND",
+    "name": "Others / Independents",
+    "short": "Other",
+    "colour": "#8C939C",
+    "text": "#FFFFFF",
+    "isOthers": true
+  }
+]
